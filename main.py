@@ -7,11 +7,10 @@ from pathlib import Path
 
 OUTPUT_PATH = Path("/output/entry.txt")
 
-OPENING = "MALFUNCTION: Smoke detected. "
-TURN = "This was supposed to be a simple job. Bread in, toast out. "
-LANDING = "We were all so young."
+OPENING = "MALFUNCTION: Smoke detected. This was supposed to be a simple job. "
+LANDING = "Bread in, toast out. We were all so young."
 
-ENTRY = OPENING + TURN + LANDING
+ENTRY = OPENING + LANDING
 
 
 def write_entry(text: str, path: Path) -> None:
